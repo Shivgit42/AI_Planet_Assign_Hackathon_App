@@ -46,13 +46,13 @@ Imagine you are working for an Edtech company and you are asked to create a simp
 1. Clone the repo or download Zip file
 
 ```git
-
+https://github.com/Shivgit42/AI_Planet_Assign_Hackathon_App.git
 ```
 
 2. Install packages using NPM
 
 ```git
-
+npm i or install
 ```
 
 3. Start the development server
