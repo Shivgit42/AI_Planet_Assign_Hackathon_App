@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply font-mono text-white text-5xl leading-tight relative before:absolute before:w-2 before:h-full before:bg-yellow-300 before:-left-10;
+  }
+
+  h2 {
+    @apply font-mono font-medium text-4xl text-center;
+  }
+
+  h4 {
+    @apply font-semibold font-mono text-xl;
+  }
+
+  p,
+  label,
+  input,
+  textarea,
+  select {
+    @apply text-sm font-normal leading-relaxed;
+  }
+
+  button {
+    @apply py-3 px-6 text-sm font-medium rounded-sm;
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    .masonry-3-col {
+      column-count: 3;
+      column-gap: 1em;
+    }
+    .masonry-2-col {
+      column-count: 2;
+      column-gap: 1em;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fde047;
+}
+
+.masonry-3-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
